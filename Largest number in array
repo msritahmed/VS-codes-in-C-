@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+{
+    int a[10]; 
+    int n;
+
+    printf("enter the number of elements\n");
+    scanf("%d",&n);
+
+    printf("enter the numbers\n");
+    for(int i=0;i<n;i++)
+    scanf("%d",&a[i]);
+      m(a,n);
+
+     return 0;
+
+
+}
+void m(int a[],int n)
+{
+    int b=a[0];
+    for(int i=1;i<n;i++)
+    {
+        if(a[i]>b)
+        {
+            b=a[i];
+        }
+    }
+     printf("largest number is %d",b);
+
+    
+
+}
