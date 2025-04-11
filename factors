@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("enter the number\n");
+    scanf("%d",&a);
+    if(a==0)
+    {
+        printf("no facters");
+        return 0;
+    }
+
+    printf("factors are:\n");
+    for(int i=1;i<=a;i++)
+    {
+        if(a%i==0)
+        printf("%d ",i);
+    }
+    return 0;
+}
