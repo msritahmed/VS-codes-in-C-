@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, tempA, tempB, gcd, lcm;
+
+    printf("Enter two positive integers: ");
+    scanf("%d %d", &a, &b);
+
+    tempA = a;
+    tempB = b;
+
+    // GCD using Euclidean algorithm
+    while (tempB != 0) {
+        int temp = tempB;
+        tempB = tempA % tempB;
+        tempA = temp;
+    }
+
+    gcd = tempA;
+    lcm = (a * b) / gcd;
+
+    printf("GCD of %d and %d = %d\n", a, b, gcd);
+    printf("LCM of %d and %d = %d\n", a, b, lcm);
+
+    return 0;
+}
