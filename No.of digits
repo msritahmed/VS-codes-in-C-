@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("enter the number\n");
+    scanf("%d",&a);
+    int c=0;
+    if(a==0)
+    {
+        printf(" no. of digits is 1");
+        return 0;
+    }
+    while(a!=0)
+    {
+        c++;
+        a/=10;
+
+    }
+    printf("digits is:%d",c);
+    return 0;
+
+}
